@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Meme Leaderboard</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .leaderboard-container {
+            max-width: 800px;
+            margin: 100px auto;
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .lb-row {
+            display: flex;
+            justify-content: space-between;
+            padding: 15px;
+            border-bottom: 1px solid #334155;
+            font-size: 1.2rem;
+        }
+        .lb-row:nth-child(1) { color: #ffd700; font-weight: bold; }
+        .lb-row:nth-child(2) { color: #c0c0c0; font-weight: bold; }
+        .lb-row:nth-child(3) { color: #cd7f32; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <div class="trending-header">
+        <h1>Top Traders</h1>
+        <div class="nav-group">
+            <a href="portfolio.html" class="nav-btn">My Portfolio</a>
+            <a href="homepage.html" class="nav-btn">Market</a>
+        </div>
+    </div>
+    <div class="leaderboard-container" id="lb-container"></div>
+    <script src="leaderboard.js"></script>
+</body>
+</html>

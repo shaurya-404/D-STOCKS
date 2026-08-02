@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>D-Stocks Asset</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .player-container {
+            max-width: 900px;
+            margin: 40px auto;
+            background-color: #1e293b;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        .player-container img {
+            width: 100%;
+            max-height: 500px;
+            object-fit: contain;
+            border-radius: 8px;
+            background-color: black;
+        }
+        .trade-panel {
+            background-color: #0f172a;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 15px;
+            display: flex;
+            gap: 10px;
+            align-items: center;
+        }
+        canvas {
+            background-color: white;
+            width: 100%;
+            height: 200px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+    <div class="trending-header">
+        <div class="nav-group">
+            <h2 id="wallet-balance" style="color: #22c55e; margin: 0; padding-right: 20px;">$0</h2>
+            <a href="portfolio.html" class="nav-btn">Portfolio</a>
+            <a href="homepage.html" class="nav-btn">Trending</a>
+        </div>
+    </div>
+    <div class="player-container" style="margin-top: 100px;">
+        <h2 id="video-title">Loading...</h2>
+        <h3 id="current-price" style="color: #10b981;">Price: $0</h3>
+        <img id="main-player" src="" alt="Player display">
+        <canvas id="priceChart"></canvas>
+        <div class="video-controls" style="margin-top: 15px; display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <button id="like-btn" style="background-color: #3b82f6; width: auto; padding: 10px 20px; margin-right: 10px; cursor: pointer;">👍 Like</button>
+                <span id="like-count" style="color: #94a3b8; font-weight: bold;">0 Likes</span>
+            </div>
+        </div>
+        <div class="trade-panel">
+            <!-- <input type="number" id="trade-qty" value="1" min="1" style="width: 80px;"> -->
+            <button id="buy-btn" style="background-color: #10b981; width: auto; padding: 10px 30px;">Buy</button>
+            <button id="sell-btn" style="background-color: #ef4444; width: auto; padding: 10px 30px;">Sell</button>
+            <span id="trade-msg" style="margin-left: 15px; font-weight: bold;"></span>
+        </div>
+    </div>
+    <script src="memeplay.js"></script>
+</body>
+</html>
